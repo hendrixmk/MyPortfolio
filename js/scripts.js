@@ -19,15 +19,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Check if menuToggle and nav exist
     if (menuToggle && nav) {
-        console.log("menuToggle and nav found! 🎉");
-
         menuToggle.addEventListener("click", function () {
-            console.log("Menu icon clicked! 🍔"); // Added for debugging
-            nav.classList.toggle("active"); // Toggle the active class
-            console.log("nav active class applied:", nav.classList.contains("active")); // Check if class is toggling
+            nav.classList.toggle("active");
+            menuToggle.classList.toggle("active");
+
+            // Toggle between hamburger and close icon
+            const icon = menuToggle.querySelector("i");
+            if (nav.classList.contains("active")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-times");
+            } else {
+                icon.classList.remove("fa-times");
+                icon.classList.add("fa-bars");
+            }
         });
     } else {
-        console.log("menuToggle or nav not found! ❌ Check class names.");
+        console.log("Menu elements not found! ❌");
     }
 });
-
