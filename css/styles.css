@@ -48,8 +48,6 @@ header {
 .navbar.shrink-navbar .logo-img {
     height: 40px; /* Smaller size when navbar shrinks */
 }
-
-/* Optional for extra spacing */
 .logo {
     margin: 0;
     padding: 0;
@@ -285,11 +283,10 @@ h2, h3 {
     margin-top: 1.5rem;
 }
 .contact-card {
-    background: #fff;
+    background: #f8f9fd;
     padding: 1rem; /* Compact padding */
     border-radius: 8px; /* Slightly rounded corners */
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
-    border-left: 3px solid #5d6d7e; /* Thin border */
+    border-left: 2px solid #f9972690; /* Thin border */
     transition: all 0.25s ease-in-out;
     cursor: pointer;
     flex: 1 1 180px; /* Smaller width */
@@ -302,30 +299,32 @@ h2, h3 {
 }
 .contact-card:hover {
     transform: translateY(-3px) scale(1.02); /* Subtle hover effect */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
     border-left-color: #007bff;
 }
 .contact-card i {
     font-size: 1.4rem; /* Slightly smaller icon */
-    color: #5d6d7e;
+    color: #190c7f;
     margin-bottom: 0.75rem;
     transition: color 0.2s ease-in-out;
+}
+#contact h2{
+    font-size: 2rem;
 }
 .contact-card h3 {
     font-size: 0.95rem; /* Compact heading */
     margin-bottom: 0.3rem;
-    color: #333;
+    color: #c86f0a89;
 }
 .contact-card p {
     font-size: 0.85rem; /* Smaller text */
     margin-bottom: 0.8rem;
-    color: #666;
+    color: #6666668e;
 }
 .contact-card a {
     font-size: 0.85rem; /* Smaller link text */
     margin-top: auto;
     text-decoration: none;
-    color: #007bff;
+    color: #6666668e;
     font-weight: 500;
 }
 .contact-card a:hover {
